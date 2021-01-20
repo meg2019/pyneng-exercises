@@ -10,3 +10,5 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+output = bin (int (mac.replace (":", ""), 16))[2:]
+print (output)
