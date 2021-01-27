@@ -25,6 +25,7 @@ Out[1]: '11111111111111111111111111110000'
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 """
 address = input ('Введите ip адрес в формате XXX.XXX.XXX.XXX/XX ')
+
 ip, mask = address.split ('/')
 octets = ip.split ('.')
 mask = int (mask)
@@ -35,6 +36,7 @@ maskOctets = (
     int(maskBin[16:24], 2),
     int(maskBin[24:32], 2),
 )
+
 ip_template = '''
     Network:
     {0:<8} {1:<8} {2:<8} {3:<8}

@@ -44,3 +44,7 @@ london_co = {
         "routing": True,
     },
 }
+DevName = input ('Введите имя устройства: (r1, r2, sw1) ')
+DevParam = input ('Введите имя параметра: ')
+
+print (london_co[DevName][DevParam])
